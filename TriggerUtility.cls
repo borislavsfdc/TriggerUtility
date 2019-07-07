@@ -49,7 +49,7 @@ public class TriggerUtility
     *   @param newList  List of the new versions of the sObject records.
     *   @param fieldName API name of the field
     */
-    public static Map<Object, sObject> mapToRelatedField(List<sObject> newList, String fieldName)
+    public static Map<Object, sObject> mapToRelatedField (List<sObject> newList, String fieldName)
     {
         Map<Object, sObject> resultMap = new Map<Object, sObject>();
         for (sObject record : newList)
@@ -80,7 +80,7 @@ public class TriggerUtility
     /**
     *   @description Returns TRUE if Person Account is enabled.
     */  
-    public static Boolean isPersonAccountEnabled()
+    public static Boolean isPersonAccountEnabled ()
     {
         return Account.SObjectType.getDescribe().hasSubtypes;
     }
