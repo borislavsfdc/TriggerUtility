@@ -8,7 +8,7 @@
 @isTest
 public class TriggerUtilityTest
 {   
-	@isTest static void testGetFieldValues()
+    @isTest static void testGetFieldValues()
     {
         Account account = new Account(Name = 'Company AG');
         insert account;
